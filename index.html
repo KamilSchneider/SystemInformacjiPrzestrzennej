@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+    <title>System Informacji Przestrzennej Olszyna Lubańska</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="pl" />
+    <meta name="robots" content="index, follow" />
+	<meta name="description" content="System Informacji Przestrzennej Miasta Olszyna "/>
+	<meta name="keywords" content="Mapa, QGIS, System, Informacji, Przestrzennej, Miasto, Olszyna, SIP, Gmina Olszyna" />
+	<meta name="author" content="Kamil Sznajdrowicz" />
+	<meta name="robots" content="follow" />
+    <link href="style.css" rel="stylesheet" />
+   
+    <script>
+        function pokaz_warstwa1() {
+            document.getElementById("warstwa1").style.visibility = "visible";
+        }
+        function ukryj_warstwa1() {
+            document.getElementById("warstwa1").style.visibility = "hidden";
+        }
+        function pokaz_warstwa2() {
+            document.getElementById("warstwa2").style.visibility = "visible";
+        }
+        function ukryj_warstwa2() {
+            document.getElementById("warstwa2").style.visibility = "hidden";
+        }
+        function pokaz_warstwa3() {
+            document.getElementById("warstwa3").style.visibility = "visible";
+        }
+        function ukryj_warstwa3() {
+            document.getElementById("warstwa3").style.visibility = "hidden";
+        }
+        function pokaz_warstwa4() {
+            document.getElementById("warstwa4").style.visibility = "visible";
+        }
+        function ukryj_warstwa4() {
+            document.getElementById("warstwa4").style.visibility = "hidden";
+        }
+        function pokaz_warstwa5() {
+            document.getElementById("warstwa5").style.visibility = "visible";
+        }
+        function ukryj_warstwa5() {
+            document.getElementById("warstwa5").style.visibility = "hidden";
+        }
+        function pokaz_warstwa6() {
+            document.getElementById("warstwa6").style.visibility = "visible";
+        }
+        function ukryj_warstwa6() {
+            document.getElementById("warstwa6").style.visibility = "hidden";
+        }
+
+        function otworzOkno(plik) {
+            window.open(plik, "", "toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, scrollbars=no, width=1500, height=700, screenX=0, screenY=0");
+            return true;
+        }
+    </script>
+
+</head>               
+  <body>
+  			<div id="naglowek">
+   				<div id="logobanner"></div>
+  			</div>
+  			<div id="zawartosc">
+                <div id="lewy_panel"> <br />
+                   <!--     <div id="menu">Menu</div> <br />   -->
+                    Mapa
+  
+                    <br />
+                    <input type="radio" name="warstwa1" onclick="pokaz_warstwa1();"  checked=checked /> Pokaż <br />
+                    <input type="radio" name="warstwa1" onclick="ukryj_warstwa1();" />Ukryj <br />
+                    <hr />
+                    Kościoły
+                    <br />
+                    <input type="radio" name="warstwa2" onclick="pokaz_warstwa2();" /> Pokaż<br />
+                    <input type="radio" name="warstwa2" onclick="ukryj_warstwa2();"checked=checked />Ukryj <br />
+                    <hr />
+                    Firmy
+                    <br />
+                    <input type="radio" name="warstwa3" onclick="pokaz_warstwa3();" /> Pokaż<br />
+                    <input type="radio" name="warstwa3" onclick="ukryj_warstwa3();" checked=checked />Ukryj <br />
+                    <hr />
+                    Urzędy
+                    <br />
+                    <input type="radio" name="warstwa4" onclick="pokaz_warstwa4();" /> Pokaż<br />
+                    <input type="radio" name="warstwa4" onclick="ukryj_warstwa4();" checked=checked />Ukryj <br />
+                    <hr />
+                    Apteki
+                    <br />
+                    <input type="radio" name="warstwa5" onclick="pokaz_warstwa5();" /> Pokaż<br />
+                    <input type="radio" name="warstwa5" onclick="ukryj_warstwa5();" checked=checked />Ukryj <br />
+                    <hr />
+                    Sklepy
+                    <br />
+                    <input type="radio" name="warstwa6" onclick="pokaz_warstwa6();" /> Pokaż<br />
+                    <input type="radio" name="warstwa6" onclick="ukryj_warstwa6();"  checked=checked />Ukryj <br />
+
+                </div>
+                <div id="centralny_panel">
+                    <br />
+                    <div id="warstwa1">
+                        <img src="Grafika\Olszyna_satelita.png" width="100%" height="100%" usemap="#olszyna" />
+                        <!--               <map name="olszyna">
+                     <area target="" alt="Biedronka" href="" coords="181,175,224,133" shape="rect" Title="Biedronka" />
+                     <area target="" alt="Dino" href="" coords="234,163,275,121" shape="rect" Title="Dino" />
+                     <area target="" alt="Felczak" href="" coords="579,275,642,319" shape="rect" Title="Felczak" />
+
+                 </map>
+    -->
+                    </div>
+                       <div id="warstwa2">
+                           <img src="Grafika\Olszyna_koscioly_strona.png" width="850px" height="496px" usemap="#olszyna_1" />
+                           <map name="olszyna_1">
+                               <area target="" alt="Kościół pw. Krzyża Św." href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_krzyza.html'); return true;" coords="318,251,356,283" shape="rect" Title="Kościół pw. Krzyża Św." />
+                               <area target="" alt="Kościół św. Józefa Oblubieńca" href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_jozefa.html');" coords="610,141,646,176" shape="rect" Title="Kościół św. Józefa Oblubieńca" />
+                               <area target="" alt="Zakłady Mięsne Niebieszczańscy" href="index.html#a" onClick="otworzOkno('Podstrony/niebieszczanscy.html');" coords="258,352,327,412" shape="rect" Title="Zakłady Mięsne Niebieszczańscy" />
+                               <area target="" alt="Zakład Stolarski AR-Drew" href="index.html#a" onClick="otworzOkno('Podstrony/ar-drew.html');" coords="159,294,207,334" shape="rect" Title="Zakład Stolarski AR-Drew" />
+                               <area target="" alt="NOVOSTRAT Performance" href="index.html#a" onClick="otworzOkno('Podstrony/novostrat.html');" coords="536,2,631,52" shape="rect" Title="NOVOSTRAT Performance" />
+                               <area target="" alt="Urząd Pocztowy" href="index.html#a" onClick="otworzOkno('Podstrony/poczta.html');" coords="641,17,687,58" shape="rect" Title="Urząd Pocztowy" />
+                               <area target="" alt="Gminny Ośrodek Kultury" href="index.html#a" onClick="otworzOkno('Podstrony/gok.html');" coords="443,136,524,206" =" shape="rect" Title="Gminny Ośrodek Kultury" />
+                               <area target="" alt="Urząd Miasta" href="index.html#a" onClick="otworzOkno('Podstrony/urzad_gminy.html');" coords="498,342,546,390" shape="rect" Title="Urząd Miasta" />
+                               <area target="" alt="Apteka Świderscy" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_swiderscy.html');" coords="305,219,350,248" shape="rect" Title="Apteka Świderscy" />
+                               <area target="" alt="Apteka Madurowicz" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_madurowicz.html');" coords="370,207,416,240" shape="rect" Title="Apteka Madurowicz" />
+                               <area target="" alt="Biedronka" href="index.html#a" onClick="otworzOkno('Podstrony/biedronka.html');" coords="181,175,224,133" shape="rect" Title="Biedronka" />
+                               <area target="" alt="Dino" href="index.html#a" onClick="otworzOkno('Podstrony/dino.html');" coords="234,163,275,121" shape="rect" Title="Dino" />
+                               <area target="" alt="Felczak" href="index.html#a" onClick="otworzOkno('Podstrony/felczak.html');" coords="579,275,642,319" shape="rect" Title="Felczak" />
+                           </map>
+                       </div>
+                       <div id="warstwa3">
+
+                           <img src="Grafika\Olszyna_firmy_strona.png" width="850px" height="496px" usemap="#olszyna_2" />
+                           <map name="olszyna_2">
+                               <area target="" alt="Kościół pw. Krzyża Św." href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_krzyza.html'); return true;" coords="318,251,356,283" shape="rect" Title="Kościół pw. Krzyża Św." />
+                               <area target="" alt="Kościół św. Józefa Oblubieńca" href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_jozefa.html');" coords="610,141,646,176" shape="rect" Title="Kościół św. Józefa Oblubieńca" />
+                               <area target="" alt="Zakłady Mięsne Niebieszczańscy" href="index.html#a" onClick="otworzOkno('Podstrony/niebieszczanscy.html');" coords="258,352,327,412" shape="rect" Title="Zakłady Mięsne Niebieszczańscy" />
+                               <area target="" alt="Zakład Stolarski AR-Drew" href="index.html#a" onClick="otworzOkno('Podstrony/ar-drew.html');" coords="159,294,207,334" shape="rect" Title="Zakład Stolarski AR-Drew" />
+                               <area target="" alt="NOVOSTRAT Performance" href="index.html#a" onClick="otworzOkno('Podstrony/novostrat.html');" coords="536,2,631,52" shape="rect" Title="NOVOSTRAT Performance" />
+                               <area target="" alt="Urząd Pocztowy" href="index.html#a" onClick="otworzOkno('Podstrony/poczta.html');" coords="641,17,687,58" shape="rect" Title="Urząd Pocztowy" />
+                               <area target="" alt="Gminny Ośrodek Kultury" href="index.html#a" onClick="otworzOkno('Podstrony/gok.html');" coords="443,136,524,206" =" shape="rect" Title="Gminny Ośrodek Kultury" />
+                               <area target="" alt="Urząd Miasta" href="index.html#a" onClick="otworzOkno('Podstrony/urzad_gminy.html');" coords="498,342,546,390" shape="rect" Title="Urząd Miasta" />
+                               <area target="" alt="Apteka Świderscy" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_swiderscy.html');" coords="305,219,350,248" shape="rect" Title="Apteka Świderscy" />
+                               <area target="" alt="Apteka Madurowicz" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_madurowicz.html');" coords="370,207,416,240" shape="rect" Title="Apteka Madurowicz" />
+                               <area target="" alt="Biedronka" href="index.html#a" onClick="otworzOkno('Podstrony/biedronka.html');" coords="181,175,224,133" shape="rect" Title="Biedronka" />
+                               <area target="" alt="Dino" href="index.html#a" onClick="otworzOkno('Podstrony/dino.html');" coords="234,163,275,121" shape="rect" Title="Dino" />
+                               <area target="" alt="Felczak" href="index.html#a" onClick="otworzOkno('Podstrony/felczak.html');" coords="579,275,642,319" shape="rect" Title="Felczak" />
+                           </map>
+                       </div>
+                       <div id="warstwa4">
+
+                           <img src="Grafika\Olszyna_urzedy_strona.png" width="850px" height="496px" usemap="#olszyna_3" />
+                           <map name="olszyna_3">
+                               <area target="" alt="Kościół pw. Krzyża Św." href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_krzyza.html'); return true;" coords="318,251,356,283" shape="rect" Title="Kościół pw. Krzyża Św." />
+                               <area target="" alt="Kościół św. Józefa Oblubieńca" href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_jozefa.html');" coords="610,141,646,176" shape="rect" Title="Kościół św. Józefa Oblubieńca" />
+                               <area target="" alt="Zakłady Mięsne Niebieszczańscy" href="index.html#a" onClick="otworzOkno('Podstrony/niebieszczanscy.html');" coords="258,352,327,412" shape="rect" Title="Zakłady Mięsne Niebieszczańscy" />
+                               <area target="" alt="Zakład Stolarski AR-Drew" href="index.html#a" onClick="otworzOkno('Podstrony/ar-drew.html');" coords="159,294,207,334" shape="rect" Title="Zakład Stolarski AR-Drew" />
+                               <area target="" alt="NOVOSTRAT Performance" href="index.html#a" onClick="otworzOkno('Podstrony/novostrat.html');" coords="536,2,631,52" shape="rect" Title="NOVOSTRAT Performance" />
+                               <area target="" alt="Urząd Pocztowy" href="index.html#a" onClick="otworzOkno('Podstrony/poczta.html');" coords="641,17,687,58" shape="rect" Title="Urząd Pocztowy" />
+                               <area target="" alt="Gminny Ośrodek Kultury" href="index.html#a" onClick="otworzOkno('Podstrony/gok.html');" coords="443,136,524,206" =" shape="rect" Title="Gminny Ośrodek Kultury" />
+                               <area target="" alt="Urząd Miasta" href="index.html#a" onClick="otworzOkno('Podstrony/urzad_gminy.html');" coords="498,342,546,390" shape="rect" Title="Urząd Miasta" />
+                               <area target="" alt="Apteka Świderscy" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_swiderscy.html');" coords="305,219,350,248" shape="rect" Title="Apteka Świderscy" />
+                               <area target="" alt="Apteka Madurowicz" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_madurowicz.html');" coords="370,207,416,240" shape="rect" Title="Apteka Madurowicz" />
+                               <area target="" alt="Biedronka" href="index.html#a" onClick="otworzOkno('Podstrony/biedronka.html');" coords="181,175,224,133" shape="rect" Title="Biedronka" />
+                               <area target="" alt="Dino" href="index.html#a" onClick="otworzOkno('Podstrony/dino.html');" coords="234,163,275,121" shape="rect" Title="Dino" />
+                               <area target="" alt="Felczak" href="index.html#a" onClick="otworzOkno('Podstrony/felczak.html');" coords="579,275,642,319" shape="rect" Title="Felczak" />
+                           </map>
+                       </div>
+                       <div id="warstwa5">
+
+                           <img src="Grafika\Olszyna_apteki_strona.png" width="850px" height="496px" usemap="#olszyna_4" />
+                           <map name="olszyna_4">
+                               <area target="" alt="Kościół pw. Krzyża Św." href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_krzyza.html'); return true;" coords="318,251,356,283" shape="rect" Title="Kościół pw. Krzyża Św." />
+                               <area target="" alt="Kościół św. Józefa Oblubieńca" href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_jozefa.html');" coords="610,141,646,176" shape="rect" Title="Kościół św. Józefa Oblubieńca" />
+                               <area target="" alt="Zakłady Mięsne Niebieszczańscy" href="index.html#a" onClick="otworzOkno('Podstrony/niebieszczanscy.html');" coords="258,352,327,412" shape="rect" Title="Zakłady Mięsne Niebieszczańscy" />
+                               <area target="" alt="Zakład Stolarski AR-Drew" href="index.html#a" onClick="otworzOkno('Podstrony/ar-drew.html');" coords="159,294,207,334" shape="rect" Title="Zakład Stolarski AR-Drew" />
+                               <area target="" alt="NOVOSTRAT Performance" href="index.html#a" onClick="otworzOkno('Podstrony/novostrat.html');" coords="536,2,631,52" shape="rect" Title="NOVOSTRAT Performance" />
+                               <area target="" alt="Urząd Pocztowy" href="index.html#a" onClick="otworzOkno('Podstrony/poczta.html');" coords="641,17,687,58" shape="rect" Title="Urząd Pocztowy" />
+                               <area target="" alt="Gminny Ośrodek Kultury" href="index.html#a" onClick="otworzOkno('Podstrony/gok.html');" coords="443,136,524,206" =" shape="rect" Title="Gminny Ośrodek Kultury" />
+                               <area target="" alt="Urząd Miasta" href="index.html#a" onClick="otworzOkno('Podstrony/urzad_gminy.html');" coords="498,342,546,390" shape="rect" Title="Urząd Miasta" />
+                               <area target="" alt="Apteka Świderscy" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_swiderscy.html');" coords="305,219,350,248" shape="rect" Title="Apteka Świderscy" />
+                               <area target="" alt="Apteka Madurowicz" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_madurowicz.html');" coords="370,207,416,240" shape="rect" Title="Apteka Madurowicz" />
+                               <area target="" alt="Biedronka" href="index.html#a" onClick="otworzOkno('Podstrony/biedronka.html');" coords="181,175,224,133" shape="rect" Title="Biedronka" />
+                               <area target="" alt="Dino" href="index.html#a" onClick="otworzOkno('Podstrony/dino.html');" coords="234,163,275,121" shape="rect" Title="Dino" />
+                               <area target="" alt="Felczak" href="index.html#a" onClick="otworzOkno('Podstrony/felczak.html');" coords="579,275,642,319" shape="rect" Title="Felczak" />
+                           </map>
+
+                       </div>
+                       <div id="warstwa6">
+
+                           <img src="Grafika\Olszyna_sklepy_strona.png" width="850px" height="496px" usemap="#olszyna_5" />
+                           <map name="olszyna_5">
+                               <area target="" alt="Kościół pw. Krzyża Św." href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_krzyza.html'); return true;" coords="318,251,356,283" shape="rect" Title="Kościół pw. Krzyża Św." />
+                               <area target="" alt="Kościół św. Józefa Oblubieńca" href="index.html#a" onClick="otworzOkno('Podstrony/kosciol_jozefa.html');" coords="610,141,646,176" shape="rect" Title="Kościół św. Józefa Oblubieńca" />
+                               <area target="" alt="Zakłady Mięsne Niebieszczańscy" href="index.html#a" onClick="otworzOkno('Podstrony/niebieszczanscy.html');" coords="258,352,327,412" shape="rect" Title="Zakłady Mięsne Niebieszczańscy" />
+                               <area target="" alt="Zakład Stolarski AR-Drew" href="index.html#a" onClick="otworzOkno('Podstrony/ar-drew.html');" coords="159,294,207,334" shape="rect" Title="Zakład Stolarski AR-Drew" />
+                               <area target="" alt="NOVOSTRAT Performance" href="index.html#a" onClick="otworzOkno('Podstrony/novostrat.html');" coords="536,2,631,52" shape="rect" Title="NOVOSTRAT Performance" />
+                               <area target="" alt="Urząd Pocztowy" href="index.html#a" onClick="otworzOkno('Podstrony/poczta.html');" coords="641,17,687,58" shape="rect" Title="Urząd Pocztowy" />
+                               <area target="" alt="Gminny Ośrodek Kultury" href="index.html#a" onClick="otworzOkno('Podstrony/gok.html');" coords="443,136,524,206" =" shape="rect" Title="Gminny Ośrodek Kultury" />
+                               <area target="" alt="Urząd Miasta" href="index.html#a" onClick="otworzOkno('Podstrony/urzad_gminy.html');" coords="498,342,546,390" shape="rect" Title="Urząd Miasta" />
+                               <area target="" alt="Apteka Świderscy" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_swiderscy.html');" coords="305,219,350,248" shape="rect" Title="Apteka Świderscy" />
+                               <area target="" alt="Apteka Madurowicz" href="index.html#a" onClick="otworzOkno('Podstrony/apteka_madurowicz.html');" coords="370,207,416,240" shape="rect" Title="Apteka Madurowicz" />
+                               <area target="" alt="Biedronka" href="index.html#a" onClick="otworzOkno('Podstrony/biedronka.html');" coords="181,175,224,133" shape="rect" Title="Biedronka" />
+                               <area target="" alt="Dino" href="index.html#a" onClick="otworzOkno('Podstrony/dino.html');" coords="234,163,275,121" shape="rect" Title="Dino" />
+                               <area target="" alt="Felczak" href="index.html#a" onClick="otworzOkno('Podstrony/felczak.html');" coords="579,275,642,319" shape="rect" Title="Felczak" />
+                           </map>
+
+                       </div>
+                   </div>
+				   <div id="prawy_panel"> <br /> <br /> <br /> <br /><br /> <br /> <br /> 
+  				   <a href="./Podstrony/qgis2web/index.html">Mapa QGIS</a>  <br />  <br />				   
+				   <a href="index.html">Mapa Satelitarna</a>  <br />  <br />					
+				   </div>
+				   
+               </div>
+               <div id="stopka">
+                Copyright @Kamil Sznajdrowicz
+               </div>
+     </body>
+    </html>

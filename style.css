@@ -1,0 +1,163 @@
+body{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	width: 1200px;
+	margin: 5px auto 0px auto;
+	background:url(Grafika/tlo2.png);
+	background-size: cover;
+}
+
+a:hover{
+background-color:#808080
+}
+a:link{
+ color:#FFFFFF
+ }
+ a:visited{
+ color:#FFFFFF
+ }
+ a:active{
+ color:#FFFFFF
+ }
+
+div#glowny{
+
+}
+
+div#naglowek{
+	height: 200px;
+	position: relative;
+	float: left;
+}
+
+div#logobanner{
+	width: 1100px;
+	height: 100%;
+	background-image:url(Grafika/logo1.png);
+	position: relative;
+	float: left;
+}
+div#zawartosc{
+	position:relative;
+	box-sizing: border-box;
+	width:100%;
+	float:left;
+	height:540px;
+}
+
+div#lewy_panel{
+	position:relative;
+	width:150px;
+	float: left;
+	height: 100%;
+}
+
+
+div#centralny_panel{
+	position:relative;
+	box-sizing: border-box;
+	float: left;
+	height: 100%;
+	width: 850px;
+}
+div#prawy_panel{
+	position:relative;
+	width:150px;
+	float: left;
+	height: 100%;
+	margin-left:30px;
+	font-size:23px;
+	}
+
+#warstwa1
+{	
+	position:relative;
+	box-sizing: border-box;
+	background-image: url(Grafika/Olszyna_satelita.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 0;
+	
+}
+#warstwa2
+{
+	width: 850px;
+	height: 100%;
+	box-sizing: border-box;
+	background-image: url(Grafika/Olszyna_koscioly_strona.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+	visibility:hidden;
+	
+	
+}
+#warstwa3
+{
+	width: 850px;
+	height: 100%;
+	box-sizing: border-box;
+	background-image: url(Grafika/Olszyna_firmy_strona.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+	visibility:hidden;
+	
+	
+}
+#warstwa4
+{	
+	width: 850px;
+	height: 100%;
+	box-sizing: border-box;
+	background-image: url(Grafika/Olszyna_urzedy_strona.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+	visibility:hidden;
+	
+	
+}
+#warstwa5
+{	
+	width: 850px;
+	height: 100%;
+	box-sizing: border-box;
+	background-image: url(Grafika/Olszyna_apteki_strona.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+	visibility:hidden;
+}
+#warstwa6
+{	
+	width: 850px;
+	height: 100%;
+	box-sizing: border-box;
+	background-image: url(Grafika/Olszyna_sklepy_strona.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+	visibility:hidden;
+}
+
+
+div#stopka{
+	position:relative;
+	width: 100%;
+	float: left;
+	height: 30px;
+	text-align:center;
+}
+p#strona{
+	font-size:22px;
+	font-weight:bolder;
+}
