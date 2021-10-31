@@ -1,0 +1,36 @@
+body{
+	text-align:center;
+	background-color:#000000;
+	font-weight:bold;
+	width: 1400px;
+	margin: 0px auto 0px auto;
+	color:#FFFFFF;
+font-size: 18px;
+}
+a:hover{
+background-color:#808080
+}
+a:link{
+ color:#000000
+ }
+ a:visited{
+ color:#3300CC
+ }
+ a:active{
+ color:#990066
+ }
+
+div#centralny_panel{
+	position:relative;
+	width:97%;
+	float: left;
+	height: 100%;
+}
+
+div#powrot{
+	position:relative;
+	width: 100%;
+	float: left;
+	height: 30px;
+	text-align:center;
+}

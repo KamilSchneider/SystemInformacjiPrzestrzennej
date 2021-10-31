@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xml:lang="pl" lang="pl">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="pl" />
+		<meta name="keywords" content="sklep, dino, produkty, żywność, jedzenie, okazje" />
+		<meta name="robots" content="index, follow" />
+        <link rel="stylesheet" type="text/css" href="style2.css" />
+        <title>Dino</title>
+		<style>
+		.button {
+ border: none; 
+ border-radius: 25px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+   */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); - ustawienie cieni (kolor tła czarny więc nie widać, jeśli inny dodam);
+   */
+   </style>
+    </head>
+    <body>
+	<script>
+		function zamknijOkno()
+{
+    window.opener = self;
+    window.close();
+}
+		</script>
+        <div id="centralny_panel">
+            <img src="../Grafika/dino.png" alt="Dino" />	 
+        </div> 
+			<iframe src="https://www.google.com/maps/embed?pb=!4v1601671451776!6m8!1m7!1sWo5tHBOuUOZCDSh8IcZVpg!2m2!1d51.06772379548623!2d15.37275278583011!3f260.6494350791082!4f-5.721961732249824!5f0.7820865974627469" 
+					width="900" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</iframe> <!-- Osaczanie nie wymaga google API * -->
+			<br /> <br /> 			
+					
+	<button class="button button1" onClick="zamknijOkno(); return true;" > 
+      Zamknij Okno
+  </button> 
+	<br /> <br />
+    </body>
+</html>
